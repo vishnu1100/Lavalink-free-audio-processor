@@ -1,11 +1,20 @@
 server:
   port: 2333
-  address: 61.1.230.195
-  password: "ftunes"
+  address: 0.0.0.0
+  password: "your-secure-password-here"
 
 lavalink:
   server:
     sources:
       youtube: false  # Disables old YouTube source
+    bufferDurationMs: 400
+    frameBufferDurationMs: 5000
+    youtubePlaylistLoadLimit: 6
+    playerUpdateInterval: 5
+    useSeekGhosting: true
+    trackStuckThresholdMs: 10000
+    filters:
+      enabled: true
+
 plugins:
   - dependency: "gg.amyassist.amy:lavalink-plugin-youtube:1.0.0"
