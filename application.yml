@@ -1,0 +1,11 @@
+server:
+  port: 2333
+  address: 0.0.0.0
+  password: "ftunes"
+
+lavalink:
+  server:
+    sources:
+      youtube: false  # Disables old YouTube source
+plugins:
+  - dependency: "gg.amyassist.amy:lavalink-plugin-youtube:1.0.0"
